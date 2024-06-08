@@ -1,4 +1,6 @@
-// calculator using function and if else . 
+/* Defination of Callback:-
+ A callback function is a function passed into another function as an argument, which is then invoked inside
+the outer function to complete some kind of routine or action*/
 // here is individual function for individual operation
 // for addition
 function addition(num1, num2) {
