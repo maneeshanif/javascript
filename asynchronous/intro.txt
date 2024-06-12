@@ -1,0 +1,68 @@
+Instead of moving to asynchronous code, let's understand what synchronous code is in JavaScript and why it can cause errors. 
+This understanding will help us see why asynchronous programming is often necessary.
+
+1 :--  synchronous in JavaScript/Typescript..
+
+"Synchronous code in JavaScript refers to how the code is executed line by line in the order it's written.
+ Each line waits for the previous line to finish before it starts".
+
+In simple terms, this behavior is similar to that of an interpreted language, where the code is executed line by line.
+
+ When a line of code is executed, the next line will not be executed until the previous line has
+ finished its execution.
+
+ Here is example of line no 11:-
+
+ step 1;   // this line is in the process of execution ....
+ step 2;   // this line will wait until step 1 is finished
+ step 3;   // this line will wait until step 2 is finished
+
+ I hope you understand the synchronous behavior.
+
+ so the question is what wrong with synchronous.
+
+ The problem with synchronous code is that it can cause blocking, which means that the code execution is paused
+ until a certain operation is completed.
+ For example, if you're making an HTTP request to fetch some data, your code will wait until
+ the response is received before it continues executing. This can lead to a poor user experience if the request
+ takes a long time to complete.
+  
+ so synchronous code can cause blocking when its come to deal with api calling or backend, which can lead to a poor user experience.
+
+ here comes asynchronous>>>
+
+ 2 :-- asynchronous in JavaScript/Typescript..
+
+ "Asynchronous programming is a way of writing JavaScript code that allows it to handle multiple tasks at the same time, or at least give 
+ the impression of doing so. This is in contrast to synchronous code, which executes line by line, waiting for each line to finish before 
+ moving on to the next one ."
+
+
+ example:
+ step 1;   // Let's say in this line there's an operation in progress, like calling/fetching data from an API or database (backend).
+ step 2;   // this line will execute immediately, without waiting for step 1 to finish
+ step 3;   // this line will also run after step 2 . 
+
+ so in above line we understand that using asynchronous in js our code become non blocking
+ and it will not wait for previous line to finish execution.
+
+ <<     --These are the topic we learn in asynchronous js/ts--   >>    // 
+ 1. Callbacks
+   1.1 High order function                                /
+   1.2 setTimeOut function                               /
+   1.3 Callbacks hell                                   / 
+ 2. Promises                                            \         These topics are provided in folders.
+   2.1 promises chaining                                 \           Please check the individual topic folders for details.
+ 3. Async/Await                                           \
+   3.1 fetch()
+   3.2 try catch block
+   3.3 async/await with promises
+   3.4 async/await with callbacks
+
+
+
+
+
+
+
+ 
